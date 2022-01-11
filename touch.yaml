@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+  - name: Create a folder
+    file:
+    path: /home/devops/ansilab/test
+    state: directory
+  - name: create a file
+    file:
+    path: /home/devops/ansilab/test/testfile
+    state: touch
